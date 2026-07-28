@@ -86,6 +86,12 @@ Each sample contains
 
 Please refer to `data/README.md` for the dataset format and preprocessing instructions.
 
+# Repository Status
+
+This repository currently provides the core implementation of TrackGuard, together with representative training and evaluation code.
+
+More detailed implementations, better-documented code, additional pretrained models, and non-private benchmark data will be released incrementally. 
+
 ---
 
 # License
