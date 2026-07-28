@@ -15,9 +15,10 @@ trackguard/
 ├── router/             Trajectory-aware routing model
 ├── recovery/           Memory-guided VLM recovery
 ├── data/               Dataset and data processing
-├── scripts/            Training and evaluation scripts
-├── configs/            Configuration files
-└── checkpoints/        Pretrained models
+labeling/               Ground-truth annotation review tool
+scripts/                Training and evaluation scripts
+configs/                Configuration files
+checkpoints/            Pretrained models
 ```
 
 ---
@@ -69,6 +70,41 @@ Evaluate the VLM recovery module
 python scripts/eval_recovery.py \
     --config configs/recovery.yaml
 ```
+
+---
+
+# Data Annotation
+
+Ground-truth identities are reviewed and corrected with the built-in annotation
+tool. It loads a sequence, renders each frame with its bounding boxes, and lets
+you fix identity switches interactively: move or resize boxes, edit a track ID,
+delete or rename an ID across the whole sequence, propagate a box forward to a
+target frame, and undo any change. Edits are written back in place in MOT format
+(`frame,id,x,y,w,h,1,-1,-1,-1`), with optional auto-save on every action.
+
+The tool expects a sequence directory laid out as:
+
+```text
+<sequence>/
+├── gt/gt.txt           MOT-format annotations (read and written in place)
+└── img1/               Frame images (000001.jpg, 000002.jpg, ...)
+```
+
+Install the annotation extra (a Tk-based GUI) and launch it:
+
+```bash
+pip install -e ".[labeling]"
+python scripts/label_review.py --dir <sequence>
+```
+
+If `--dir` is omitted a folder picker is shown. Add `--no_auto_save` to review
+without writing until you press Save. Keyboard shortcuts: `A`/`←` and `D`/`→`
+change frame, `space` toggles boxes, `Q` undoes, `E` starts quick-create, and
+`W`/`Delete` removes the selected box.
+
+The annotation logic is separated from the interface: the data model, geometry,
+history, and session live in the top-level `labeling/` package as importable,
+testable modules, while only the GUI layer depends on the Tk toolkit.
 
 ---
 

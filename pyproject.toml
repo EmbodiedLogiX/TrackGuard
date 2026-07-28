@@ -20,6 +20,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0", "matplotlib>=3.7"]
+labeling = ["ttkbootstrap>=1.10", "Pillow>=9.5"]
 finetune = [
     "transformers>=4.49",
     "peft>=0.10",
@@ -32,7 +33,7 @@ finetune = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["trackguard*"]
+include = ["trackguard*", "labeling*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
