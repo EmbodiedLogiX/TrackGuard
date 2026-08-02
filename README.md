@@ -1,6 +1,6 @@
 # Think When Lost: Adaptive Large–Small Model Collaboration for Reliable Multi-Object Tracking in Logistics
 <div align="center">
-<a href="https://scholar.google.com/citations?user=mVSEBdMAAAAJ&hl=en&oi=ao">Zhaotie Hao</a><sup>1</sup>,&nbsp; <a href="https://scholar.google.com/citations?user=kXbWREkAAAAJ&hl=en">Jiawei Ma</a><sup>1</sup>,&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=Yg1RBVwAAAAJ">Zhiyuan Zhou</a><sup>2</sup>,&nbsp; <a href="https://scholar.google.com/citations?user=7XOy-jkAAAAJ&hl=en">Jiangyi Fang</a><sup>3</sup>,&nbsp; <a href="http://www.zhiqinghong.one/">Zhiqing Hong</a><sup>4</sup>,&nbsp; <a>Xin Li</a><sup>1*</sup>&nbsp; <a href="https://sbuhaotian.github.io/SBUhaotian/">Haotian Wang</a><sup>5</sup>&nbsp; <a href="https://people.cs.rutgers.edu/~dz220/">Desheng Zhang</a><sup>4</sup>&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=hc1m_BQAAAAJ">Tian He</a><sup>5*</sup>&nbsp;  <a href="https://scholar.google.com/citations?hl=en&user=T89V0RAAAAAJ">Zhimeng Yin</a><sup>1*</sup>&nbsp;
+<a href="https://scholar.google.com/citations?user=mVSEBdMAAAAJ&hl=en&oi=ao">Zhaotie Hao</a><sup>1</sup>,&nbsp; <a href="https://scholar.google.com/citations?user=kXbWREkAAAAJ&hl=en">Jiawei Ma</a><sup>1</sup>,&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=Yg1RBVwAAAAJ">Zhiyuan Zhou</a><sup>2</sup>,&nbsp; <a href="https://scholar.google.com/citations?user=7XOy-jkAAAAJ&hl=en">Jiangyi Fang</a><sup>3</sup>,&nbsp; <a href="http://www.zhiqinghong.one/">Zhiqing Hong</a><sup>4</sup>,&nbsp; <a herf="https://scholars.cityu.edu.hk/en/persons/xinli375/">Xin Li</a><sup>1</sup>&nbsp; <a href="https://sbuhaotian.github.io/SBUhaotian/">Haotian Wang</a><sup>5</sup>&nbsp; <a href="https://people.cs.rutgers.edu/~dz220/">Desheng Zhang</a><sup>4</sup>&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=hc1m_BQAAAAJ">Tian He</a><sup>5*</sup>&nbsp;  <a href="https://scholar.google.com/citations?hl=en&user=T89V0RAAAAAJ">Zhimeng Yin</a><sup>1*</sup>&nbsp;
 <br>
 <sup>1</sup> City University of Hong Kong &nbsp;&nbsp;&nbsp; <sup>2</sup> Rutgers University<br> <sup>3</sup> Peking University &nbsp;&nbsp;&nbsp <sup>4</sup> Hong Kong University of Science and Technology (Guangzhou) <sup>5</sup> JD Logistics
 <br>
@@ -48,7 +48,7 @@ This repository contains the core implementation of TrackGuard, including the tr
 - [x] Initialize this GitHub repository.
 <!-- - [] Release our paper on arXiv. -->
 
-# Repository Structure
+# 📦 Repository Structure
 
 ```text
 trackguard/
@@ -63,7 +63,7 @@ checkpoints/            Pretrained models
 
 ---
 
-# Method Overview
+# 🌈 Method Overview
 
 TrackGuard consists of two complementary components.
 
@@ -89,7 +89,7 @@ This verification mechanism significantly improves robustness under severe occlu
 
 ---
 
-# Quick Start
+# 🚀 Quick Start
 
 Install the package
 
@@ -113,7 +113,7 @@ python scripts/eval_recovery.py \
 
 ---
 
-# Data Annotation
+# 📜 Data Annotation
 
 Ground-truth identities are reviewed and corrected with the built-in annotation
 tool. It loads a sequence, renders each frame with its bounding boxes, and lets
@@ -148,7 +148,7 @@ testable modules, while only the GUI layer depends on the Tk toolkit.
 
 ---
 
-# Dataset
+# 🔖 Dataset
 
 The repository includes the benchmark datasets used in our paper.
 
@@ -162,7 +162,7 @@ Each sample contains
 
 Please refer to `data/README.md` for the dataset format and preprocessing instructions.
 
-# Repository Status
+# 📝 Repository Status
 
 This repository currently provides the core implementation of TrackGuard, together with representative training and evaluation code.
 
