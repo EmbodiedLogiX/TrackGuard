@@ -1,12 +1,52 @@
-# TrackGuard
-
-**Think When Lost: Adaptive Large–Small Model Collaboration for Reliable Multi-Object Tracking in Logistics**
+# Think When Lost: Adaptive Large–Small Model Collaboration for Reliable Multi-Object Tracking in Logistics
+<div align="center">
+<a href="https://scholar.google.com/citations?user=mVSEBdMAAAAJ&hl=en&oi=ao">Zhaotie Hao</a><sup>1</sup>,&nbsp; <a href="https://scholar.google.com/citations?user=kXbWREkAAAAJ&hl=en">Jiawei Ma</a><sup>1</sup>,&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=Yg1RBVwAAAAJ">Zhiyuan Zhou</a><sup>2</sup>,&nbsp; <a href="https://scholar.google.com/citations?user=7XOy-jkAAAAJ&hl=en">Jiangyi Fang</a><sup>3</sup>,&nbsp; <a href="http://www.zhiqinghong.one/">Zhiqing Hong</a><sup>4</sup>,&nbsp; <a>Xin Li</a><sup>1*</sup>&nbsp; <a href="https://sbuhaotian.github.io/SBUhaotian/">Haotian Wang</a><sup>5</sup>&nbsp; <a href="https://people.cs.rutgers.edu/~dz220/">Desheng Zhang</a><sup>4</sup>&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=hc1m_BQAAAAJ">Tian He</a><sup>5*</sup>&nbsp;  <a href="https://scholar.google.com/citations?hl=en&user=T89V0RAAAAAJ">Zhimeng Yin</a><sup>1*</sup>&nbsp;
+<br>
+<sup>1</sup> City University of Hong Kong &nbsp;&nbsp;&nbsp; <sup>2</sup> Rutgers University<br> <sup>3</sup> Peking University &nbsp;&nbsp;&nbsp <sup>4</sup> Hong Kong University of Science and Technology (Guangzhou) <sup>5</sup> JD Logistics
+<br>
+<sup>*</sup>Corresponding Author
+<br>
+<!-- <a href='https://kdd2027.kdd.org/'><img src='https://img.shields.io/badge/KDD-2026-78CA2E.svg'></a> &nbsp; -->
+<!-- <a href='https://openreview.net/forum?id=H6rDX4w6Al'><img src='https://img.shields.io/badge/Paper-Openreview-8D1B12.svg'></a> &nbsp; -->
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a> &nbsp;
+<a href='https://github.com/EmbodiedLogiX/TrackGuard/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;
+<!-- <a href="https://arxiv.org/abs/2602.08024"><img src="https://img.shields.io/badge/arXiv-2602.08024-b31b1b.svg"></a> &nbsp; -->
+<a href="https://huggingface.co/"><img src="https://img.shields.io/badge/transformers-4.57-FFD21E.svg" alt="transformers"></a> &nbsp;
+<a href="https://python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776ab.svg" alt="Python"></a> &nbsp;
+<!-- <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-2.5%2B-DF3411.svg" alt="PyTorch"></a> &nbsp;
+<!-- <a href="#"><img src="https://img.shields.io/badge/#.svg"></a> &nbsp; -->
+</div>
 
 TrackGuard is an adaptive large–small collaborative framework for long-term multi-object tracking in logistics sorting. Instead of invoking a Vision-Language Model (VLM) on every frame, TrackGuard learns **when** large-model reasoning is necessary and **how** to recover object identities using compact historical memory.
 
 This repository contains the core implementation of TrackGuard, including the trajectory-aware router, the memory-guided VLM recovery module, and the benchmark datasets used in our paper.
 
 ---
+
+## 🔥News
+
+<!-- - [2026.05.01] 🔍Fix a potential OOM bug in manual [CLS] attention extraction in Qwen2.5-VL and Qwen3-VL.
+- [2026.02.10] 🚀Release our paper on arXiv.
+- [2026.02.06] 🍾Our paper has been selected as an **Oral Presentation** at **ICLR 2026**.
+- [2026.02.01] ✨Release FlashVID code and inference demos on *Qwen2.5-VL* and *Qwen3-VL*.
+- [2026.01.31] 🚀Release this repository to the public.
+- [2026.01.30] ✨Release FlashVID code and inference demos on *LLaVA-OneVision* and *LLaVA-Video*.
+- [2026.01.30] 👏Initialize this GitHub repository.
+- [2026.01.26] 🎉Our training-free inference acceleration method [FlashVID](https://openreview.net/forum?id=H6rDX4w6Al) has been accepted at **ICLR 2026**. -->
+- [2026.07.26] 🌟Release the GitHub repository of [TrackGuard](https://github.com/EmbodiedLogiX/TrackGuard).
+- [2026.07.20] 👏Initialize this GitHub repository.
+
+## 📋Todo List
+
+- [ ] Optimize code efficiency and improve deployment performance.
+- [ ] Release the remaining TrackGuard code.
+- [ ] Release demos showcasing large–small model collaboration for reliable multi-object tracking.
+- [ ] Release VLM fine-tuning code based on Qwen2.5-VL and Qwen3-VL.
+- [x] Release a subset of non-private datasets.
+- [x] Release multi-object tracking annotation tools.
+- [x] Release the Adaptive Routing module.
+- [x] Initialize this GitHub repository.
+<!-- - [] Release our paper on arXiv. -->
 
 # Repository Structure
 
@@ -129,6 +169,10 @@ This repository currently provides the core implementation of TrackGuard, togeth
 More detailed implementations, better-documented code, additional pretrained models, and non-private benchmark data will be released incrementally. 
 
 ---
+
+## 👏Acknowledgement
+
+This project is built upon recent open-source works: [ByteTrack](https://github.com/FoundationVision/ByteTrack), [Qwen2.5-VL/Qwen3-VL](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct), [Gemma](https://huggingface.co/Andycurrent/Gemma-3-4B-VL-it-Gemini-Pro-Heretic-Uncensored-Thinking_GGUF), [LlamaFactory](https://github.com/hiyouga/LlamaFactory), [Transformers](https://github.com/huggingface/transformers). Thanks for their excellent work!
 
 # License
 
