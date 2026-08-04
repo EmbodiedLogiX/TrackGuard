@@ -40,8 +40,8 @@ This repository contains the core implementation of TrackGuard, including the tr
 
 - [ ] Optimize code efficiency and improve deployment performance.
 - [ ] Release the remaining TrackGuard code.
-- [ ] Release demos showcasing large–small model collaboration for reliable multi-object tracking.
-- [ ] Release VLM fine-tuning code based on Qwen2.5-VL and Qwen3-VL.
+<!-- - [ ] Release demos showcasing large–small model collaboration for reliable multi-object tracking. -->
+- [x] Release VLM fine-tuning code based on Qwen2.5-VL and Qwen3-VL.
 - [x] Release a subset of non-private datasets.
 - [x] Release multi-object tracking annotation tools.
 - [x] Release the Adaptive Routing module.
@@ -166,7 +166,7 @@ Please refer to `data/README.md` for the dataset format and preprocessing instru
 
 This repository currently provides the core implementation of TrackGuard, together with representative training and evaluation code.
 
-More detailed implementations, better-documented code, additional pretrained models, and non-private benchmark data will be released incrementally. 
+More detailed implementations, better-documented code, additional pretrained models, and non-private datasets will be released incrementally. 
 
 ---
 
