@@ -1,0 +1,41 @@
+gate:
+  iou_threshold: 0.8
+  min_box_side: 20.0
+  min_confidence: 0.5
+  max_aspect_ratio: 3.0
+  min_track_age: 0
+
+encoding:
+  coord_norm_x: 1260.0
+  coord_norm_y: 720.0
+  feat_dim: 6
+  arm_feat_dim: 6
+
+router:
+  hidden: 256
+  n_heads: 8
+  n_layers: 4
+  hidden_cls: 256
+  dropout: 0.1
+  use_arm: true
+  use_arm_cross_attn: false
+  use_temporal_decay: true
+  decay_rate: 0.08
+  time_pos_encoding: sinusoidal
+  track_id_encoding: one_hot
+  token_type_encoding: one_hot
+  max_encode_tokens: 4096
+
+recovery:
+  max_options: 4
+  arm_leave_cooldown: 10
+  cand_center_dist_max: 200.0
+  cand_x_forward_max: 100.0
+  max_arm_delay: 30
+  max_hist_search: 300
+
+calibration:
+  target_precision: 0.7
+  target_recall: 0.85
+  train_pos_ratio: 0.5
+  prior_correction: true
